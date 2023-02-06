@@ -1,9 +1,11 @@
 package routers
 
 import (
+	"fmt"
 	"github.com/brahyanje0504/sofka_backend/infrastructure/entrypoint/rest/handlers"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
+	"os"
 )
 
 type router struct {
@@ -40,5 +42,6 @@ func (r *router) Start() error {
 
 	r.registry()
 
-	return r.app.Listen(":3000")
+	port := os.Getenv("PORT")
+	return r.app.Listen(fmt.Sprintf(":%v", port))
 }
