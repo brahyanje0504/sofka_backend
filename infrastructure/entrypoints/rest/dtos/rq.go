@@ -5,12 +5,12 @@ type SpacecraftRQ struct {
 	TonsOfThrust      float64 `json:"tons_of_thrust"`
 	TonsOfWeight      float64 `json:"tons_of_weight"`
 	TypeFuel          string  `json:"type_fuel"`
-	Height            int     `json:"height"`
+	Height            float64 `json:"height"`
 	Country           string  `json:"country"`
 	Objective         string  `json:"objective"`
 	Activated         bool    `json:"activated"`
 	ExpirationDate    string  `json:"expiration_date"`
-	PeopleCapacity    int     `json:"people_capacity"`
+	PeopleCapacity    float64 `json:"people_capacity"`
 	TransportCapacity float64 `json:"transport_capacity"`
 	MassiveSpeed      float64 `json:"massive_speed"`
 	PropulsionSystem  string  `json:"propulsion_system"`
