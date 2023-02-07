@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/brahyanje0504/sofka_backend/application/rest/database"
-	"github.com/brahyanje0504/sofka_backend/application/rest/server"
+	"github.com/brahyanje0504/sofka_backend/application/rest/application/rest/database"
+	"github.com/brahyanje0504/sofka_backend/application/rest/application/rest/server"
 	"github.com/brahyanje0504/sofka_backend/domain/usecase"
 	"github.com/brahyanje0504/sofka_backend/infrastructure/drivenadapters/adapters"
 	"github.com/brahyanje0504/sofka_backend/infrastructure/entrypoint/rest/handlers"

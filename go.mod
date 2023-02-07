@@ -3,10 +3,10 @@ module github.com/brahyanje0504/sofka_backend/application/rest
 go 1.19
 
 replace (
-	github.com/brahyanje0504/sofka_backend/infrastructure/entrypoint/rest => ../../infrastructure/entrypoints/rest
-	github.com/brahyanje0504/sofka_backend/domain/usecase => ../../domain/usecase
-	github.com/brahyanje0504/sofka_backend/domain/model => ../../domain/model
-	github.com/brahyanje0504/sofka_backend/infrastructure/drivenadapters/adapters => ../../infrastructure/drivenadapters/adapters
+	github.com/brahyanje0504/sofka_backend/infrastructure/entrypoint/rest => ./infrastructure/entrypoints/rest
+	github.com/brahyanje0504/sofka_backend/domain/usecase => ./domain/usecase
+	github.com/brahyanje0504/sofka_backend/domain/model => ./domain/model
+	github.com/brahyanje0504/sofka_backend/infrastructure/drivenadapters/adapters => ./infrastructure/drivenadapters/adapters
 )
 
 require (
